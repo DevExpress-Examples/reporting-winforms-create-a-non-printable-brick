@@ -1,5 +1,7 @@
-﻿Namespace NonPrintBrick
-    Partial Public Class Form1
+Namespace NonPrintBrick
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,14 +12,14 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+'#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -26,7 +28,7 @@
             Me.components = New System.ComponentModel.Container()
             Me.btn_NonPrintableBrick = New System.Windows.Forms.Button()
             Me.printingSystem1 = New DevExpress.XtraPrinting.PrintingSystem(Me.components)
-            DirectCast(Me.printingSystem1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.printingSystem1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' btn_NonPrintableBrick
@@ -37,6 +39,7 @@
             Me.btn_NonPrintableBrick.TabIndex = 1
             Me.btn_NonPrintableBrick.Text = "Show NonPrintableBrick"
             Me.btn_NonPrintableBrick.UseVisualStyleBackColor = True
+            AddHandler Me.btn_NonPrintableBrick.Click, New System.EventHandler(AddressOf Me.btn_NonPrintableBrick_Click)
             ' 
             ' Form1
             ' 
@@ -46,15 +49,13 @@
             Me.Controls.Add(Me.btn_NonPrintableBrick)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            DirectCast(Me.printingSystem1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.printingSystem1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
-
         End Sub
 
-        #End Region
+'#End Region
+        Private btn_NonPrintableBrick As System.Windows.Forms.Button
 
-        Private WithEvents btn_NonPrintableBrick As System.Windows.Forms.Button
         Private printingSystem1 As DevExpress.XtraPrinting.PrintingSystem
     End Class
 End Namespace
-
