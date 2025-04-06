@@ -41,7 +41,7 @@ Namespace NonPrintBrick
             Dim tBrick As New TextBrick(BorderSide.None, 1, Color.Black, Color.Khaki, Color.Blue)
             tBrick.Url = "http://www.devexpress.com"
             tBrick.Text = "Click here to visit our web site"
-            tBrick.CanPublish = False
+            tBrick.CanPublishToFormats = CanPublishToFormats.None;
             printingSystem1.Graph.DrawBrick(tBrick, New RectangleF(0, 0, 200, 20))
 
             ' Create a brick - a column header.

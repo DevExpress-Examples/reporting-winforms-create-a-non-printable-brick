@@ -40,7 +40,7 @@ namespace NonPrintBrick {
             TextBrick tBrick = new TextBrick(BorderSide.None, 1, Color.Black, Color.Khaki, Color.Blue);
             tBrick.Url = "http://www.devexpress.com";
             tBrick.Text = "Click here to visit our web site";
-            tBrick.CanPublish = false;
+            tBrick.CanPublishToFormats = CanPublishToFormats.None;
             printingSystem1.Graph.DrawBrick(tBrick, new RectangleF(0, 0, 200, 20));
 
             // Create a brick - a column header.
