@@ -5,7 +5,7 @@
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
 
-# XtraPrinting Library - How to Create a non-printable Brick
+# XtraPrinting Library - How to Create a Non-Printable Brick
 
 This example illustrates how to create a brick that is visible on the screen, but is not printed.
 
